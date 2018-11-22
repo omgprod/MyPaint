@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Paint</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+<body>
+<div class="navbar">
+    <div class="item">
+        <div id="pen" class="fa fa-pen"></div>
+        <div class="label">Stylo</div>
+    </div>
+    <div class="item">
+        <div id="brush" class="fa fa-paint-brush"></div>
+        <div class="label">Pinceau</div>
+    </div>
+    <div class="item">
+        <div id="erase" class="fa fa-eraser"></div>
+        <div class="label">Gomme</div>
+    </div>
+    <div class="item">
+        <div id="undo" class="fa fa-undo"></div>
+        <div class="label">Retour</div>
+    </div>
+    <div class="item">
+        <div id="drip" class="fa fa-fill-drip"></div>
+        <div class="label">Seau</div>
+    </div>
+    <div class="item">
+        <div id="cercle" class="fa fa-circle"></div>
+        <div class="label">Cercle</div>
+    </div>
+    <div class="item">
+        <div id="rectangle" class="fa fa-square"></div>
+        <div class="label">Rectangle</div>
+    </div>
+    <div class="item">
+        <div>
+            <input type="color" id="color" name="color" value="#000000"/>
+            <div class="label">Couleurs</div>
+        </div>
+    </div>
+    <div class="item">
+        <div id="save" class="fa fa-save"></div>
+        <div class="label">Enregistrer</div>
+    </div>
+    <div class="item">
+        <div id="import" class="fa fa-wrench"></div>
+        <div class="label">Importer</div>
+    </div>
+    <div class="item">
+        <div id="reset" class="fa fa-power-off"></div>
+        <div class="label">Renitialiser</div>
+    </div>
+    <div class="item">
+        <div id="test" class="fa fa-toolbox"></div>
+        <div class="label">Outils</div>
+    </div>
+</div>
+
+<div class="container">
+    <canvas id="canvas" height="700" width="1200" style="margin-top: 2%;">
+    </canvas>
+    	<div id="tool" style="display: inline-block;">
+    	    <div id="geometrique">
+	        	<input type="checkbox" id="fill">
+	        	<label for="fill">Remplir les formes géométriques</label>
+	        	<input type="checkbox" id="opacity">
+	        	<label for="opacity">Opacité</label>
+	    	</div>
+		</div>
+    	<div id="importImage" style="display: inline-block;">
+        	<input type="file" id="imageLoader" placeholder="Charger votre image" />
+    	</div>
+    <a id="download">Telecharger votre dessin</a>
+
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
